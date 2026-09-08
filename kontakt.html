@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prijava i kontakt | Mala matura NBG</title>
+<meta name="description" content="Prijavite dete na pripremnu nastavu za malu maturu na Novom Beogradu. Popunite prijavu za dva minuta ili pozovite profesorke direktno na telefon.">
+<link rel="canonical" href="https://malamaturanbg.rs/kontakt.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#glavni">Preskoči na sadržaj</a>
+
+<header class="nav is-solid" id="nav">
+  <div class="container nav__inner">
+    <a class="nav__logo" href="index.html" aria-label="Mala matura NBG, početna strana">
+      <span class="nav__mark" aria-hidden="true">M</span>
+      <span class="nav__word">Mala matura<span>Novi Beograd</span></span>
+    </a>
+    <nav class="nav__links" aria-label="Glavna navigacija">
+      <a class="nav__link" href="index.html#predmeti">Predmeti</a>
+      <a class="nav__link" href="index.html#nacin-rada">Način rada</a>
+      <a class="nav__link" href="index.html#predavaci">Predavači</a>
+      <a class="nav__link" href="index.html#cenovnik">Cenovnik</a>
+      <a class="nav__link" href="kontakt.html" aria-current="page">Kontakt</a>
+    </nav>
+    <div class="nav__right">
+      <a class="btn btn--dark btn--sm nav__cta" href="tel:+381641308896">064 130 8896</a>
+      <button class="nav__burger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Otvori meni">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="nav__panel" id="menu">
+    <a href="index.html#predmeti">Predmeti</a>
+    <a href="index.html#nacin-rada">Način rada</a>
+    <a href="index.html#predavaci">Predavači</a>
+    <a href="index.html#cenovnik">Cenovnik</a>
+    <a href="kontakt.html">Kontakt</a>
+    <a class="btn btn--primary btn--block" href="tel:+381641308896">Pozovi 064 130 8896</a>
+  </div>
+</header>
+<div class="nav__overlay" id="navOverlay"></div>
+
+<main id="glavni">
+
+<section class="page-head">
+  <div class="container">
+    <div class="stack gap-20" style="align-items:center;text-align:center">
+      <span class="badge reveal"><span class="badge__dot" aria-hidden="true"></span>Odgovaramo istog dana</span>
+      <h1 class="headline headline--center reveal" data-d="1">
+        <span>Prijavite</span>
+        <span class="hl">dete
+          <img class="hl__line" src="images/brightpath/deco-underline-swoosh.svg" alt="" aria-hidden="true">
+          <img class="hl__spark" src="images/brightpath/deco-sparkle.svg" alt="" aria-hidden="true">
+        </span>
+      </h1>
+      <p class="lead reveal" data-d="2" style="max-width:52ch">Četiri kratka pitanja i gotovi ste. Ako vam je lakše da pozovete, brojevi su ispod.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:30px">
+  <div class="container">
+
+    <!-- ============ WIZARD ============ -->
+    <div class="wizard reveal" id="wizard">
+      <div class="wizard__bar" id="wizardBar" role="progressbar" aria-valuemin="1" aria-valuemax="4" aria-valuenow="1" aria-label="Napredak prijave">
+        <span class="wizard__dot is-done"></span>
+        <span class="wizard__dot"></span>
+        <span class="wizard__dot"></span>
+        <span class="wizard__dot"></span>
+      </div>
+
+      <form id="prijava" novalidate>
+
+        <!-- Korak 1 -->
+        <div class="wizard__step is-active" data-step="1">
+          <p class="wizard__count">Korak <b>1</b> od 4</p>
+          <h2 class="h4 wizard__q">Za koji predmet prijavljujete dete?</h2>
+          <p class="wizard__hint">Oba predmeta se održavaju u istom terminu, jedno za drugim.</p>
+          <div class="choices">
+            <button type="button" class="choice" data-name="predmet" data-value="Srpski i matematika">
+              <span class="choice__ico choice__ico--lime" aria-hidden="true"><span class="choice__ico-txt">OBA</span></span>
+              <span class="choice__label">Srpski i matematika</span>
+              <span class="choice__go" aria-hidden="true"><img src="images/brightpath/icon-arrow-link.svg" alt=""></span>
+            </button>
+            <button type="button" class="choice" data-name="predmet" data-value="Samo srpski jezik">
+              <span class="choice__ico choice__ico--pink" aria-hidden="true"><span class="choice__ico-txt">SR</span></span>
+              <span class="choice__label">Samo srpski jezik</span>
+              <span class="choice__go" aria-hidden="true"><img src="images/brightpath/icon-arrow-link.svg" alt=""></span>
+            </button>
+            <button type="button" class="choice" data-name="predmet" data-value="Samo matematika">
+              <span class="choice__ico choice__ico--blue" aria-hidden="true"><img src="images/brightpath/icon-program-math.svg" alt=""></span>
+              <span class="choice__label">Samo matematika</span>
+              <span class="choice__go" aria-hidden="true"><img src="images/brightpath/icon-arrow-link.svg" alt=""></span>
+            </button>
+            <button type="button" class="choice" data-name="predmet" data-value="Još se dogovaramo">
+              <span class="choice__ico choice__ico--peach" aria-hidden="true"><img src="images/brightpath/icon-level-1-starting.svg" alt=""></span>
+              <span class="choice__label">Još se dogovaramo</span>
+              <span class="choice__go" aria-hidden="true"><img src="images/brightpath/icon-arrow-link.svg" alt=""></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Korak 2 -->
+        <div class="wizard__step" data-step="2">
+          <p class="wizard__count">Korak <b>2</b> od 4</p>
+          <h2 class="h4 wizard__q">Koji termin vam više odgovara?</h2>
+          <p class="wizard__hint">Nastava je subotom u BC Azzaro, Jurija Gagarina 32.</p>
+          <div class="choices">
+            <button type="button" class="choice" data-name="termin" data-value="Grupa 1, 10:00 do 13:00">
+              <span class="choice__ico choice__ico--blue" aria-hidden="true"><img src="images/brightpath/icon-level-1-starting.svg" alt=""></span>
+              <span class="choice__label">Grupa 1, 10:00 do 13:00</span>
+              <span class="choice__go" aria-hidden="true"><img src="images/brightpath/icon-arrow-link.svg" alt=""></span>
+            </button>
+            <button type="button" class="choice" data-name="termin" data-value="Grupa 2, 13:00 do 16:00">
+              <span class="choice__ico choice__ico--lime" aria-hidden="true"><img src="images/brightpath/icon-level-2-catchingup.svg" alt=""></span>
+              <span class="choice__label">Grupa 2, 13:00 do 16:00</span>
+              <span class="choice__go" aria-hidden="true"><img src="images/brightpath/icon-arrow-link.svg" alt=""></span>
+            </button>
+            <button type="button" class="choice" data-name="termin" data-value="Svejedno nam je">
+              <span class="choice__ico choice__ico--pink" aria-hidden="true"><img src="images/brightpath/icon-level-3-keepingpace.svg" alt=""></span>
+              <span class="choice__label">Svejedno nam je</span>
+              <span class="choice__go" aria-hidden="true"><img src="images/brightpath/icon-arrow-link.svg" alt=""></span>
+            </button>
+            <button type="button" class="choice" data-name="termin" data-value="Želimo da se dogovorimo">
+              <span class="choice__ico choice__ico--peach" aria-hidden="true"><img src="images/brightpath/icon-badge-dot.svg" alt=""></span>
+              <span class="choice__label">Želimo da se dogovorimo</span>
+              <span class="choice__go" aria-hidden="true"><img src="images/brightpath/icon-arrow-link.svg" alt=""></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Korak 3 -->
+        <div class="wizard__step" data-step="3">
+          <p class="wizard__count">Korak <b>3</b> od 4</p>
+          <h2 class="h4 wizard__q">Koju srednju školu dete cilja?</h2>
+          <p class="wizard__hint">Ovo nam pomaže da procenimo koliko poena treba i kojim tempom da radimo.</p>
+          <div class="choices">
+            <button type="button" class="choice" data-name="cilj" data-value="Filološka ili Matematička gimnazija">
+              <span class="choice__ico choice__ico--lime" aria-hidden="true"><img src="images/brightpath/icon-level-4-racingahead.svg" alt=""></span>
+              <span class="choice__label">Filološka ili Matematička</span>
+              <span class="choice__go" aria-hidden="true"><img src="images/brightpath/icon-arrow-link.svg" alt=""></span>
+            </button>
+            <button type="button" class="choice" data-name="cilj" data-value="Neka beogradska gimnazija">
+              <span class="choice__ico choice__ico--blue" aria-hidden="true"><img src="images/brightpath/icon-level-3-keepingpace.svg" alt=""></span>
+              <span class="choice__label">Beogradska gimnazija</span>
+              <span class="choice__go" aria-hidden="true"><img src="images/brightpath/icon-arrow-link.svg" alt=""></span>
+            </button>
+            <button type="button" class="choice" data-name="cilj" data-value="Stručna srednja škola">
+              <span class="choice__ico choice__ico--peach" aria-hidden="true"><img src="images/brightpath/icon-level-2-catchingup.svg" alt=""></span>
+              <span class="choice__label">Stručna srednja škola</span>
+              <span class="choice__go" aria-hidden="true"><img src="images/brightpath/icon-arrow-link.svg" alt=""></span>
+            </button>
+            <button type="button" class="choice" data-name="cilj" data-value="Još ne znamo">
+              <span class="choice__ico choice__ico--pink" aria-hidden="true"><img src="images/brightpath/icon-level-1-starting.svg" alt=""></span>
+              <span class="choice__label">Još ne znamo</span>
+              <span class="choice__go" aria-hidden="true"><img src="images/brightpath/icon-arrow-link.svg" alt=""></span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Korak 4 -->
+        <div class="wizard__step" data-step="4">
+          <p class="wizard__count">Korak <b>4</b> od 4</p>
+          <h2 class="h4 wizard__q">Vaši podaci</h2>
+          <p class="wizard__hint">Javljamo se istog dana, najčešće u toku prepodneva.</p>
+
+          <div class="field" id="f-ime">
+            <label for="ime">Ime i prezime roditelja</label>
+            <input type="text" id="ime" name="ime" autocomplete="name" placeholder="Npr. Jelena Petrović">
+            <span class="field__err">Upišite ime i prezime.</span>
+          </div>
+
+          <div class="field" id="f-telefon">
+            <label for="telefon">Telefon</label>
+            <input type="tel" id="telefon" name="telefon" autocomplete="tel" placeholder="Npr. 064 123 4567">
+            <span class="field__err">Upišite broj telefona.</span>
+          </div>
+
+          <div class="field" id="f-email">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="Npr. jelena@primer.rs">
+            <span class="field__err">Upišite ispravnu email adresu.</span>
+          </div>
+
+          <div class="field">
+            <label for="poruka">Poruka (nije obavezno)</label>
+            <textarea id="poruka" name="poruka" placeholder="Ime deteta, osnovna škola, pitanja koja imate"></textarea>
+          </div>
+
+          <p class="wizard__hint" style="margin:0">Podatke koristimo samo da vam odgovorimo. Više u <a href="privatnost.html" style="color:var(--orange)">politici privatnosti</a>.</p>
+        </div>
+
+        <div class="wizard__nav">
+          <button type="button" class="wizard__back" id="wizardBack" hidden>&larr; Nazad</button>
+          <button type="button" class="btn btn--primary" id="wizardNext">Dalje</button>
+          <button type="submit" class="btn btn--primary" id="wizardSubmit" hidden>Pošalji prijavu</button>
+        </div>
+
+        <div class="form-alert" id="formAlert" role="alert"></div>
+      </form>
+
+      <div class="wizard__done" id="wizardDone" role="status">
+        <div class="tick" aria-hidden="true">&#10003;</div>
+        <h2 class="h4">Prijava je poslata</h2>
+        <p style="max-width:42ch;margin:10px auto 22px">Hvala vam. Javljamo se na broj koji ste ostavili, najčešće isti dan. Ako vam treba brži odgovor, pozovite Mirjanu na 064 130 8896.</p>
+        <a class="btn btn--white" href="index.html">Nazad na početnu</a>
+      </div>
+    </div>
+
+    <!-- ============ TELEFONI ============ -->
+    <div class="contact-cards">
+      <a class="contact-card reveal" href="tel:+381641308896">
+        <span class="contact-card__name">Mirjana Gošić</span>
+        <span class="contact-card__role">Matematika</span>
+        <span class="contact-card__tel">064 130 8896</span>
+      </a>
+      <a class="contact-card reveal" data-d="1" href="tel:+381641302842">
+        <span class="contact-card__name">Biljana Branić Latinović</span>
+        <span class="contact-card__role">Srpski jezik</span>
+        <span class="contact-card__tel">064 130 2842</span>
+      </a>
+      <a class="contact-card reveal" data-d="2" href="tel:+38163462947">
+        <span class="contact-card__name">Dragana Milanović</span>
+        <span class="contact-card__role">Srpski jezik</span>
+        <span class="contact-card__tel">063 462 947</span>
+      </a>
+    </div>
+
+    <div class="map-note reveal">
+      <h2 class="h5">Gde nas nađete</h2>
+      <p style="color:var(--ink)">Poslovni centar Azzaro, Jurija Gagarina 32, Novi Beograd, preko puta tržnog centra Piramida. Nastava je subotom od 10:00 do 16:00, u dva termina.</p>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="nav__logo" href="index.html">
+          <span class="nav__mark" aria-hidden="true">M</span>
+          <span class="nav__word">Mala matura<span>Novi Beograd</span></span>
+        </a>
+        <div class="footer__meta">
+          <a href="mailto:mirjana.gosic@gmail.com">mirjana.gosic@gmail.com</a>
+          <span>BC Azzaro, Jurija Gagarina 32, Novi Beograd</span>
+          <span>Nastava subotom, 10:00 do 16:00</span>
+        </div>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h3>Sekcije</h3>
+          <ul>
+            <li><a href="index.html#predmeti">Predmeti</a></li>
+            <li><a href="index.html#nacin-rada">Način rada</a></li>
+            <li><a href="index.html#predavaci">Predavači</a></li>
+            <li><a href="index.html#cenovnik">Cenovnik</a></li>
+            <li><a href="index.html#utisci">Utisci</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Telefoni</h3>
+          <ul>
+            <li><a href="tel:+381641308896">Mirjana &middot; 064 130 8896</a></li>
+            <li><a href="tel:+381641302842">Biljana &middot; 064 130 2842</a></li>
+            <li><a href="tel:+38163462947">Dragana &middot; 063 462 947</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h3>Prijava</h3>
+          <ul>
+            <li><a href="kontakt.html">Popuni prijavu</a></li>
+            <li><a href="index.html#pitanja">Česta pitanja</a></li>
+            <li><a href="privatnost.html">Politika privatnosti</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>&copy; 2026 Mala matura NBG. Sva prava zadržana.</span>
+      <span class="footer__legal">
+        <a href="privatnost.html">Politika privatnosti</a>
+        <span class="footer__dot" aria-hidden="true"></span>
+        <a href="kontakt.html">Kontakt</a>
+      </span>
+    </div>
+  </div>
+  <div class="edge edge--green footer__edge" aria-hidden="true"></div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

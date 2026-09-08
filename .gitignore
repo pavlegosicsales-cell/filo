@@ -1,0 +1,18 @@
+# Radni folderi skilova i lokalna podesavanja
+01-client-info-gathering/
+02-website-build-rules/
+03-form-backend-setup/
+.claude/
+desktop.ini
+site-teardown-skill.md.md
+
+# Interne beleske, ne idu na javni repo
+context.md
+DESIGN.md
+
+# Originali grafika (veliki fajlovi), na sajtu se koriste umanjene verzije
+images/reference/Group*.png
+images/reference/underline*.png
+images/reference/efekat*.png
+images/reference/book.png
+images/reference/old-site-Group_5_1.png
