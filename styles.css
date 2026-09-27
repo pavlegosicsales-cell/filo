@@ -470,8 +470,8 @@ p{color:var(--muted);line-height:1.55}
 @media (min-width:810px){ .team{grid-template-columns:repeat(2,1fr);gap:30px} }
 @media (min-width:1200px){ .team{grid-template-columns:repeat(3,1fr)} }
 .teacher{
-  border-radius:var(--r-md);padding:20px 10px;
-  display:flex;flex-direction:column;
+  border-radius:var(--r-md);padding:26px 14px;
+  display:flex;flex-direction:column;min-height:180px;
 }
 .teacher--green{background:var(--green)}
 .teacher--lime{background:var(--lime)}
@@ -479,17 +479,11 @@ p{color:var(--muted);line-height:1.55}
 .teacher__head{padding-inline:10px;display:flex;flex-direction:column;gap:4px}
 .teacher--green .teacher__head h3,.teacher--green .teacher__head p{color:var(--cream)}
 .teacher__role{font-size:15px}
-.teacher__photo{
-  margin-top:20px;border-radius:var(--r-sm);overflow:hidden;background:var(--cream);
-  aspect-ratio:1.04;display:grid;place-items:center;
+.teacher__note{
+  margin-top:auto;padding:24px 10px 0;font-size:15px;
+  border-top:1px solid var(--ink-10);
 }
-.teacher__photo img{width:100%;height:100%;object-fit:cover}
-.teacher__ph{
-  width:100%;height:100%;display:grid;place-items:center;text-align:center;
-  padding:20px;font-size:14px;color:var(--muted);background:var(--cream);line-height:1.4;
-}
-.teacher__note{padding:20px 10px 0;text-align:right;font-size:15px}
-.teacher--green .teacher__note{color:var(--cream)}
+.teacher--green .teacher__note{color:var(--cream);border-top-color:var(--cream-20)}
 
 /* ---------- Informacije ---------- */
 .info{display:grid;gap:30px;align-items:center}
