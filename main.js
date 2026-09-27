@@ -508,16 +508,16 @@ const ENDPOINT = '';
       }
       hideAlert();
 
+      /* Imena polja moraju da se poklapaju sa readParams_ u apps-script/Code.gs */
       const payload = {
-        predmet: answers.predmet || '',
-        termin: answers.termin || '',
-        cilj: answers.cilj || '',
         ime: document.getElementById('ime').value.trim(),
         telefon: document.getElementById('telefon').value.trim(),
         email: document.getElementById('email').value.trim(),
+        predmet: answers.predmet || '',
+        termin: answers.termin || '',
+        cilj: answers.cilj || '',
         poruka: document.getElementById('poruka').value.trim(),
-        strana: window.location.href,
-        vreme: new Date().toISOString()
+        strana: window.location.href
       };
 
       if (!ENDPOINT) {
@@ -529,11 +529,11 @@ const ENDPOINT = '';
       submitBtn.disabled = true;
       submitBtn.textContent = 'Šalje se...';
 
-      fetch(ENDPOINT, {
-        method: 'POST',
-        mode: 'no-cors',
-        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-        body: JSON.stringify(payload)
+      /* Salje se kao GET sa parametrima. Apps Script svaki POST preusmerava
+         na sesijski URL i pretvara ga u GET, cime se gubi e.postData. */
+      fetch(ENDPOINT + '?' + new URLSearchParams(payload).toString(), {
+        method: 'GET',
+        mode: 'no-cors'
       })
         .then(function () { finish(); })
         .catch(function () {
