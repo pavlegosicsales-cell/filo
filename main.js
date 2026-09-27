@@ -2,8 +2,10 @@
    Mala matura NBG - main.js
    ============================================================ */
 
-// Paste the Apps Script URL here after running Skill 03
-const ENDPOINT = '';
+/* Apps Script veb aplikacija koja prima prijave.
+   Kod je u apps-script/Code.gs. Posle svake izmene tog koda ide
+   Deploy > Manage deployments > olovka > Version: New version. */
+const ENDPOINT = 'https://script.google.com/macros/s/AKfycbx3p5o2yxUVzpS-cQ2KT8ICEOiY-3WmVxoZ2A72kjmRovnaf0EyEeTGOBN6e8xo7YDgBw/exec';
 
 (function () {
   'use strict';
