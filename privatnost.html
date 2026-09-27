@@ -9,17 +9,25 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+<link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <a class="skip" href="#glavni">Preskoči na sadržaj</a>
 
+<!-- Broj slobodnih mesta se menja ovde, na sve tri strane -->
+<div class="topbar" role="status">
+  <span class="topbar__dot" aria-hidden="true"></span>
+  <p>Ostalo je još <b>7 mesta</b> za generaciju 2026/2027. Požurite.</p>
+</div>
+
+
 <header class="nav is-solid" id="nav">
   <div class="container nav__inner">
     <a class="nav__logo" href="index.html" aria-label="Mala matura NBG, početna strana">
-      <span class="nav__mark" aria-hidden="true">M</span>
-      <span class="nav__word">Mala matura<span>Novi Beograd</span></span>
+      <span class="nav__mark" aria-hidden="true"><img src="images/logo-cap.svg" alt=""></span>
+      <span class="nav__word">Mala <em>matura</em><span>Novi Beograd</span></span>
     </a>
     <nav class="nav__links" aria-label="Glavna navigacija">
       <a class="nav__link" href="index.html#predmeti">Predmeti</a>
@@ -114,8 +122,8 @@
     <div class="footer__grid">
       <div class="footer__brand">
         <a class="nav__logo" href="index.html">
-          <span class="nav__mark" aria-hidden="true">M</span>
-          <span class="nav__word">Mala matura<span>Novi Beograd</span></span>
+          <span class="nav__mark" aria-hidden="true"><img src="images/logo-cap.svg" alt=""></span>
+          <span class="nav__word">Mala <em>matura</em><span>Novi Beograd</span></span>
         </a>
         <div class="footer__meta">
           <a href="mailto:mirjana.gosic@gmail.com">mirjana.gosic@gmail.com</a>

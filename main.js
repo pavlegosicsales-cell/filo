@@ -140,8 +140,9 @@ const ENDPOINT = '';
       if (!el) return;
 
       e.preventDefault();
+      /* Donja ivica zaglavlja, racuna i crvenu traku iznad nava */
       const nav = document.getElementById('nav');
-      const offset = nav ? nav.offsetHeight + 10 : 0;
+      const offset = nav ? nav.getBoundingClientRect().bottom + 10 : 0;
       const dest = window.scrollY + el.getBoundingClientRect().top - offset;
 
       if (reduceMotion) { window.scrollTo(0, dest); }
